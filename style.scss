@@ -1,103 +1,48 @@
+.page-wrapper {
+    display: grid;
+    
+    background-color: tan;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 
-/* id's */
-#css-zen-garden {}
+    grid-template-areas: 
+    
+        "intro intro intro intro intro intro"
+        "main summary summary summary summary side"
+        "main summary1 summary1 summary1 summary1 side"
+        "main summary2 summary2 summary2 summary2 side"
+        "main summary3 summary3 summary3 summary3 side"
+        "main summary4 summary4 summary4 summary4 side"
+    
+    ;
 
-#zen-intro {}
+}
 
-#zen-supporting {}
+#css-zen-garden{
+    background-color:black;
+    padding:0;
+    margin:0;
+}
+.intro{
+    grid-area: intro;
+    background-color: blue;
+    
+}
+.summary{
+    grid-area: summary;
+    background-color: red;
+}
+.preamble{
+    grid-area: summary1;
+    background-color: orange;
+}
+    
+.main supporting{
+    grid-area: summary2;
+    background-color: yellow;
+}
 
-#zen-summary {}
-
-#zen-preamble {}
-
-#zen-explanation {}
-
-#zen-participation {}
-
-#zen-benefits {}
-
-#zen-requirements {}
-
-#design-selection {}
-
-#design-archives {}
-
-#zen-resources {}
-
-
-/* class */
-.page-wrapper {}
-
-.extra1 {}
-
-.extra2 {}
-
-.extra3 {}
-
-.extra4 {}
-
-.extra5 {}
-
-.extra6 {}
-
-.intro {}
-
-.main.supporting {}
-
-.sidebar {}
-
-.summary {}
-
-.preamble {}
-
-.explanation {}
-
-.participation {}
-
-.benefits {}
-
-.requirements {}
-
-.wrapper {}
-
-.zen-validate-html {}
-
-.zen-validate-css {}
-
-.zen-license {}
-
-.zen-accessibility {}
-
-.zen-github {}
-
-.design-selection {}
-
-.design-archives {}
-
-.zen-resources {}
-
-.select {}
-
-.archives {}
-
-.resources {}
-
-.view-css {}
-
-.css-resources {}
-
-.zen-faq {}
-
-.zen-submit {}
-
-.zen-translations {}
-
-.next {}
-
-.viewall {}
-
-.design-name {}
-
-.designer-name {}
-
-.indicator {}
+.sidebar{
+    grid-area: side;
+    background-color: purple;
+}

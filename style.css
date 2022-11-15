@@ -1,6 +1,33 @@
- 
-  
-  body {
-    background-color: lightblue;
-    margin: 0;
-  }
+.page-wrapper {
+  display: grid;
+  background-color: tan;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "intro intro intro intro intro intro" "main summary summary summary summary side" "main summary1 summary1 summary1 summary1 side" "main summary2 summary2 summary2 summary2 side" "main summary3 summary3 summary3 summary3 side" "main summary4 summary4 summary4 summary4 side"; }
+
+#css-zen-garden {
+  background-color: black;
+  padding: 0;
+  margin: 0; }
+
+.intro {
+  grid-area: intro;
+  background-color: blue; }
+
+.summary {
+  grid-area: summary;
+  background-color: red; }
+
+.preamble {
+  grid-area: summary1;
+  background-color: orange; }
+
+.main supporting {
+  grid-area: summary2;
+  background-color: yellow; }
+
+.sidebar {
+  grid-area: side;
+  background-color: purple; }
+
+/*# sourceMappingURL=style.css.map */
