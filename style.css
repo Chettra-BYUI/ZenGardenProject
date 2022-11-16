@@ -1,33 +1,31 @@
-.page-wrapper {
+.css-zen-garden {
   display: grid;
-  background-color: tan;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "intro intro intro intro intro intro" "main summary summary summary summary side" "main summary1 summary1 summary1 summary1 side" "main summary2 summary2 summary2 summary2 side" "main summary3 summary3 summary3 summary3 side" "main summary4 summary4 summary4 summary4 side"; }
-
-#css-zen-garden {
-  background-color: black;
-  padding: 0;
-  margin: 0; }
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: stretch;
+  grid-template-areas: "intro intro intro intro intro intro" ". main-supporting main-supporting main-supporting main-supporting ." ". participation participation participation participation ." "footer benefits benefits benefits benefits sidebar" "footer requirements requirements requirements requirements sidebar" "footer . . . . sidebar"; }
 
 .intro {
-  grid-area: intro;
-  background-color: blue; }
+  grid-area: intro; }
 
-.summary {
-  grid-area: summary;
-  background-color: red; }
+.main-supporting {
+  grid-area: main-supporting; }
 
-.preamble {
-  grid-area: summary1;
-  background-color: orange; }
+.participation {
+  grid-area: participation; }
 
-.main supporting {
-  grid-area: summary2;
-  background-color: yellow; }
+.benefits {
+  grid-area: benefits; }
 
-.sidebar {
-  grid-area: side;
-  background-color: purple; }
+.requirements {
+  grid-area: requirements; }
+
+footer {
+  grid-area: footer; }
+
+aside {
+  grid-area: sidebar; }
 
 /*# sourceMappingURL=style.css.map */
