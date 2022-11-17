@@ -3,23 +3,25 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
-    grid-auto-flow: row;
-    justify-items: stretch;
+    
+    
     grid-template-areas:
         "intro intro intro intro intro intro"
-        ". main-supporting main-supporting main-supporting main-supporting ."
-        ". participation participation participation participation ."
-        "footer benefits benefits benefits benefits sidebar"
-        "footer requirements requirements requirements requirements sidebar"
+        ". . main-supporting main-supporting . ."
+        ". . participation participation . ."
+        "footer . benefits benefits . sidebar"
+        "footer . requirements requirements . sidebar"
         "footer . . . . sidebar";
 }
 
-.intro {
+/*.intro {
     grid-area: intro;
+    
 }
 
-.main-supporting {
+#-zen-supporting {
     grid-area: main-supporting;
+    
 }
 
 .participation {
@@ -40,4 +42,4 @@ footer {
 
 aside {
     grid-area: sidebar;
-}
+}*/

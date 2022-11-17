@@ -3,29 +3,36 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
-  grid-auto-flow: row;
-  justify-items: stretch;
-  grid-template-areas: "intro intro intro intro intro intro" ". main-supporting main-supporting main-supporting main-supporting ." ". participation participation participation participation ." "footer benefits benefits benefits benefits sidebar" "footer requirements requirements requirements requirements sidebar" "footer . . . . sidebar"; }
+  grid-template-areas: "intro intro intro intro intro intro" ". . main-supporting main-supporting . ." ". . participation participation . ." "footer . benefits benefits . sidebar" "footer . requirements requirements . sidebar" "footer . . . . sidebar"; }
 
-.intro {
-  grid-area: intro; }
+/*.intro {
+    grid-area: intro;
+    
+}
 
-.main-supporting {
-  grid-area: main-supporting; }
+#-zen-supporting {
+    grid-area: main-supporting;
+    
+}
 
 .participation {
-  grid-area: participation; }
+    grid-area: participation;
+}
 
 .benefits {
-  grid-area: benefits; }
+    grid-area: benefits;
+}
 
 .requirements {
-  grid-area: requirements; }
+    grid-area: requirements;
+}
 
 footer {
-  grid-area: footer; }
+    grid-area: footer;
+}
 
 aside {
-  grid-area: sidebar; }
+    grid-area: sidebar;
+}*/
 
 /*# sourceMappingURL=style.css.map */
