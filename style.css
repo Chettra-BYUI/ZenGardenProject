@@ -1,11 +1,22 @@
+
+body {
+    background-color: lightblue;
+    background-image: url("foreground.svg");
+    
+    
+    
+}
+
+
 .css-zen-garden {
+    
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas: "intro intro intro intro intro intro" ". . main-supporting main-supporting . ." ". . participation participation . ." "footer . benefits benefits . sidebar" "footer . requirements requirements . sidebar" "footer . . . . sidebar"; }
 
-/*.intro {
+.intro {
     grid-area: intro;
     
 }
@@ -33,6 +44,6 @@ footer {
 
 aside {
     grid-area: sidebar;
-}*/
+}
 
-/*# sourceMappingURL=style.css.map */
+/*  # sourceMappingURL=style.css.map */
