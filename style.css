@@ -1,7 +1,5 @@
 
-html{
-    height: 100%;
-} 
+
 body {
 
     background: rgb(128,234,255);
@@ -16,13 +14,13 @@ body {
   {
  
     text-align: center;
-    padding-top: 20%;
+    padding-top: 15%;
     padding-left: 35%;
     padding-right: 30%;
-  
+    
    
     
-    
+
 
     
 
@@ -43,6 +41,16 @@ body {
     background-repeat: no-repeat;  */
 
 
+#zen-preamble {
+    color: blue !important;
+}
+
+
+
+    #zen-requirements{
+   color: white !important;
+}
+
 body:before {
     margin-left: -5.5rem;
     margin-top: -1rem;
@@ -56,12 +64,32 @@ body:before {
     left: 0;*/
     width: 115%;
     height: 110%;
-    z-index: 3;
+    z-index: 1;
 }
 
 
- 
+#design-selection{
+    position: fixed;
+    bottom: 3rem;
+    background-color: red !important;
+    opacity: 1 !important;
+    z-index: 3;
+    margin-left: -30rem;
+    width: 15%;
+    
+}
 
+#design-archives,
+#zen-resources{
+    position: fixed;
+    bottom: 10rem;
+    background-color: red !important;
+    opacity: 1 !important;
+    z-index: 3;
+    margin-left: 40rem;
+    width: 20%;
+
+}
 
 .css-zen-garden {
     
