@@ -78,7 +78,10 @@ body:before {
     width: 15%;
     
 }
+footer{
 
+    margin-bottom: 10rem;
+}
 #design-archives,
 #zen-resources{
     position: fixed;
