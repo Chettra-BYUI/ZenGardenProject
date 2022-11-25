@@ -71,7 +71,7 @@ body:before {
 #design-selection{
     position: fixed;
     bottom: 3rem;
-    background-color: red !important;
+    
     opacity: 1 !important;
     z-index: 3;
     margin-left: -30rem;
@@ -82,19 +82,40 @@ footer{
 
     margin-bottom: 10rem;
 }
-#design-archives,
-#zen-resources{
+#design-archives
+{
     position: fixed;
-    bottom: 10rem;
-    background-color: red !important;
+    bottom: 17rem;
+
     opacity: 1 !important;
     z-index: 3;
     margin-left: 40rem;
     width: 20%;
 
+
 }
 
-.css-zen-garden {
+#zen-resources {
+    position: fixed;
+    bottom: 5rem;
+
+    opacity: 1 !important;
+    z-index: 3;
+    margin-left: 40rem;
+    width: 20%;
+
+
+}
+ol {
+    list-style-type: none;
+ 
+}
+
+ul {
+    list-style-type: none;
+
+}
+/*.css-zen-garden {
     
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -132,4 +153,30 @@ aside {
     grid-area: sidebar;
 }
 
-/*  # sourceMappingURL=style.css.map */
+  # sourceMappingURL=style.css.map */
+
+ul,
+li {
+    list-style: none;
+    font-size: .58em;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+    background: #ffc;
+    display: block;
+    height: 6em;
+    width: 6em;
+    padding: 1.5em;
+}
+
+ul li {
+    margin: 2em;
+}
