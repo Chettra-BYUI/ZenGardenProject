@@ -90,15 +90,27 @@ footer {
   z-index: 3;
   margin-left: 40rem;
   width: 23%; }
+  #design-archives ul,
+  #design-archives li {
+    list-style: none;
+    font-size: .80em;
+    overflow: hidden;
+    margin: 1em;
+    padding: 2.3em; }
+  #design-archives ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden; }
   #design-archives ul li a {
     word-break: break-word;
     text-decoration: none;
     color: #000;
     background: red;
-    border-radius: 50%;
-    height: 15em;
-    width: 15em;
-    padding: .5em;
+    border-radius: 90%;
+    height: 20em;
+    width: 20em;
+    padding: 1em;
     margin: 3rem; }
 
 #zen-resources {
@@ -108,6 +120,27 @@ footer {
   z-index: 3;
   margin-left: 40rem;
   width: 23%; }
+  #zen-resources ul,
+  #zen-resources li {
+    list-style: none;
+    font-size: .80em;
+    overflow: hidden;
+    padding: 1em; }
+  #zen-resources ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden; }
+  #zen-resources ul li a {
+    word-break: break-word;
+    text-decoration: none;
+    color: #000;
+    background: red;
+    border-radius: 70%;
+    height: 20em;
+    width: 15em;
+    padding: .5em;
+    margin: 3rem; }
 
 ol {
   list-style-type: none; }
