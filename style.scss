@@ -66,6 +66,7 @@ body:before {
   }
 }
 
+
 @mixin fish {
     background-position: 0px 0px;
     background-repeat: no-repeat;
@@ -80,7 +81,7 @@ body:before {
 
 #zen-explanation {
   
-  background-image: url('fish 4.svg');
+  background-image: url('Untitled-1.svg');
   @include fish;
   @include ease-out
   
