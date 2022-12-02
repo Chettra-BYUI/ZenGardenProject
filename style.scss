@@ -214,3 +214,25 @@ aside {
 }
 
   # sourceMappingURL=style.css.map */
+
+
+@media only screen and (max-width: 600px){
+
+    body:before {
+        margin-left: -5.5rem;
+        margin-top: -1rem;
+        pointer-events: none;
+        content: "";
+        background-image: url("foreground.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+        /* top: 0;
+    left: 0;*/
+        width: 60%;
+        height: 60%;
+        z-index: 1;
+    }
+
+
+}
