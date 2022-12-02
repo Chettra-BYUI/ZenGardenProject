@@ -50,31 +50,31 @@ body:before {
     background-position: 100% 0; } }
 #zen-explanation {
   background-image: url("fish 4.svg");
-  background-position: 45px 100px;
+  background-position: 0px 0px;
   background-repeat: no-repeat;
   background-size: 20%;
-  animation: animatedBackground 10s linear infinite; }
+  animation: animatedBackground 10s ease-out infinite; }
 
 #zen-participation {
-  background-image: url("fish 3.svg");
-  background-position: 45px 100px;
+  background-image: url("fish 1.svg");
+  background-position: 0px 0px;
   background-repeat: no-repeat;
   background-size: 20%;
   animation: animatedBackground 10s linear infinite; }
 
 #zen-benefits {
   background-image: url("fish 2.svg");
-  background-position: 45px 100px;
+  background-position: 0px 0px;
   background-repeat: no-repeat;
   background-size: 20%;
-  animation: animatedBackground 10s linear infinite; }
+  animation: animatedBackground 10s ease-in infinite; }
 
 #zen-requirements {
-  background-image: url("fish 1.svg");
-  background-position: 45px 100px;
+  background-image: url("fish 3.svg");
+  background-position: 0px 0px;
   background-repeat: no-repeat;
   background-size: 20%;
-  animation: animatedBackground 10s linear infinite; }
+  animation: animatedBackground 10s ease infinite; }
 
 #design-selection {
   position: fixed;

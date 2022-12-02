@@ -67,32 +67,41 @@ body:before {
 }
 
 @mixin fish {
-    background-position: 45px 100px;
+    background-position: 0px 0px;
     background-repeat: no-repeat;
     background-size: 20%;
-    animation: animatedBackground 10s linear infinite;
+    
 }
+
+@mixin linear {animation: animatedBackground 10s linear infinite;}
+@mixin ease-out {  animation: animatedBackground 10s ease-out infinite;}
+@mixin ease-in {  animation: animatedBackground 10s ease-in infinite;}
+@mixin ease { animation: animatedBackground 10s ease infinite}
+
 #zen-explanation {
   
   background-image: url('fish 4.svg');
   @include fish;
+  @include ease-out
   
   
 }
 
 #zen-participation {
-    background-image: url('fish 3.svg');
+    background-image: url('fish 1.svg');
     @include fish;
-   
+   @include linear;
 
 }
 #zen-benefits{
       background-image: url('fish 2.svg');
       @include fish;
+      @include ease-in;
 }
 #zen-requirements {
-    background-image: url('fish 1.svg');
+    background-image: url('fish 3.svg');
     @include fish;
+    @include ease;
 }
 #design-selection {
   position: fixed;
