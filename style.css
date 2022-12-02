@@ -24,29 +24,57 @@ body {
     /* background-image: url("foreground.svg");
     background-attachment: fixed;
     background-repeat: no-repeat;  */
-#zen-preamble {
-  color: blue !important; }
-
-#zen-requirements {
-  color: white !important; }
-
 body:before {
-  margin-left: -5.5rem;
-  margin-top: -1rem;
   pointer-events: none;
   content: "";
   background-image: url("foreground.svg");
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
-  /* top: 0;
-    left: 0;*/
-  width: 115%;
-  height: 110%;
+  height: 115%;
+  width: 105%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: -5rem;
   z-index: 1; }
 
+/*need to fix the boday*/
 .designer-name {
   display: none !important; }
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 100% 0; } }
+#zen-explanation {
+  background-image: url("fish 4.svg");
+  background-position: 45px 100px;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  animation: animatedBackground 10s linear infinite; }
+
+#zen-participation {
+  background-image: url("fish 3.svg");
+  background-position: 45px 100px;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  animation: animatedBackground 10s linear infinite; }
+
+#zen-benefits {
+  background-image: url("fish 2.svg");
+  background-position: 45px 100px;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  animation: animatedBackground 10s linear infinite; }
+
+#zen-requirements {
+  background-image: url("fish 1.svg");
+  background-position: 45px 100px;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  animation: animatedBackground 10s linear infinite; }
 
 #design-selection {
   position: fixed;
@@ -182,17 +210,16 @@ aside {
   # sourceMappingURL=style.css.map */
 @media only screen and (max-width: 400px) {
   body:before {
-    margin-left: .001px;
-    margin-top: .001px;
+    margin-left: -5.5rem;
+    margin-top: -1rem;
     pointer-events: none;
+    content: "";
     background-image: url("mobile foreground.svg");
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
-    /* top: 0;
-left: 0;*/
-    width: 90%;
-    height: 100%;
+    width: 115%;
+    height: 110%;
     z-index: 1; } }
 
 /*# sourceMappingURL=style.css.map */
