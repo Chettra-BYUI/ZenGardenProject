@@ -180,20 +180,19 @@ aside {
 }
 
   # sourceMappingURL=style.css.map */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   body:before {
-    margin-left: -5.5rem;
-    margin-top: -1rem;
+    margin-left: .001px;
+    margin-top: .001px;
     pointer-events: none;
-    content: "";
-    background-image: url("foreground.svg");
+    background-image: url("mobile foreground.svg");
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
     /* top: 0;
 left: 0;*/
-    width: 60%;
-    height: 60%;
+    width: 90%;
+    height: 100%;
     z-index: 1; } }
 
 /*# sourceMappingURL=style.css.map */
