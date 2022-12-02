@@ -49,11 +49,12 @@ body:before {
   to {
     background-position: 100% 0; } }
 #zen-explanation {
-  background-image: url("Untitled-1.svg");
+  background-image: url("fish 4.svg");
   background-position: 0px 0px;
   background-repeat: no-repeat;
   background-size: 20%;
-  animation: animatedBackground 10s ease-out infinite; }
+  animation: animatedBackground 10s ease-out infinite;
+  animation-direction: reverse; }
 
 #zen-participation {
   background-image: url("fish 1.svg");
@@ -74,7 +75,8 @@ body:before {
   background-position: 0px 0px;
   background-repeat: no-repeat;
   background-size: 20%;
-  animation: animatedBackground 10s ease infinite; }
+  animation: animatedBackground 10s ease infinite;
+  animation-direction: reverse; }
 
 #design-selection {
   position: fixed;

@@ -74,14 +74,23 @@ body:before {
     
 }
 
-@mixin linear {animation: animatedBackground 10s linear infinite;}
-@mixin ease-out {  animation: animatedBackground 10s ease-out infinite;}
+@mixin linear {
+  animation: animatedBackground 10s linear infinite;
+  
+}
+@mixin ease-out {
+  animation: animatedBackground 10s ease-out infinite;
+  animation-direction: reverse;
+}
 @mixin ease-in {  animation: animatedBackground 10s ease-in infinite;}
-@mixin ease { animation: animatedBackground 10s ease infinite}
+@mixin ease {
+  animation: animatedBackground 10s ease infinite;
+  animation-direction: reverse;
+}
 
 #zen-explanation {
   
-  background-image: url('Untitled-1.svg');
+  background-image: url('fish 4.svg');
   @include fish;
   @include ease-out
   
