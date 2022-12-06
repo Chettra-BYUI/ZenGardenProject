@@ -1,3 +1,5 @@
+ 
+ 
 body {
   background: rgb(128, 234, 255);
   background: linear-gradient(
@@ -9,13 +11,20 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: .7fr 1.3fr 1fr 1fr 1.5fr 0.5fr;
     gap: 8px 9px;
+     
+    cursor: crosshair, auto;
+   
+     
 }
 
-/*#zen-intro {
+ #zen-intro {
   display: none;
 }
-*/
+ 
 .page-wrapper {
+
+  font-size: xx-large;
+ 
   text-align: center;
   padding-top: -5rem;
   /*padding-left: 35%;
@@ -42,6 +51,7 @@ body {
 
 
 body:before {
+
   grid-area: 1 / 1 / 7 / 7;
   
   pointer-events: none;
@@ -118,8 +128,27 @@ body:before {
     background-image: url('fish 3.svg');
     @include fish;
     @include ease;
+    color: rgb(229, 216, 254);
+    a:link {
+      color: rgb(245, 170, 252);
+      text-decoration: none;
+     
+    }
 }
+#zen-supporting :nth-child(1) {
+  color: salmon;
+
+}
+
+footer {
+  a:link {
+    color: rgb(245, 170, 252);
+    text-decoration: none;
+  }
+}
+
 #design-selection {
+  font-size: small;
   position: fixed;
   top: 3rem;
   right: 3rem;
@@ -156,6 +185,8 @@ footer {
 }
 
 #design-archives {
+
+  font-size: medium;
   
   grid-area: 2 / 1 / 4 / 3;
   
@@ -195,6 +226,7 @@ footer {
 }
 
 #zen-resources {
+  font-size: medium;
   
   grid-area: 4 / 1 / 6 / 3;
   
@@ -282,9 +314,10 @@ aside {
   # sourceMappingURL=style.css.map */
 
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 750px){
 
 body:before {
+    font-size: medium;
     margin-left: -5.5rem;
     margin-top: -1rem;
     pointer-events: none;
@@ -301,3 +334,5 @@ body:before {
 
 
 }
+
+ 
