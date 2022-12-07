@@ -1,3 +1,6 @@
+
+// varables sections
+
 $coral_01: #e40d17;
 $coral_02: #0aaa2d;
 $coral_03: #003cff;
@@ -24,7 +27,7 @@ body {
      
 }
 
- #zen-intro {
+ .intro {
   display: none;
 }
  
@@ -74,10 +77,8 @@ body:before {
   margin:-1rem -1rem 1rem -5rem;
   z-index: 1;
 }
-/*need to fix the boday*/
-.designer-name {
-  display: none !important;
-}
+ 
+
 
 @keyframes animatedBackground {
   from {
@@ -111,7 +112,7 @@ body:before {
   animation-direction: reverse;
 }
 
-#zen-explanation {
+.explanation {
   
   background-image: url('fish 4.svg');
   @include fish;
@@ -120,18 +121,18 @@ body:before {
   
 }
 
-#zen-participation {
+.participation {
     background-image: url('fish 1.svg');
     @include fish;
    @include linear;
 
 }
-#zen-benefits{
+.benefits{
       background-image: url('fish 2.svg');
       @include fish;
       @include ease-in;
 }
-#zen-requirements {
+.requirements {
     background-image: url('fish 3.svg');
     @include fish;
     @include ease;
@@ -175,7 +176,8 @@ footer {
   }
 }
 
-#design-selection {
+.design-selection {
+  display: grid;
   font-size: small;
   position: fixed;
   top: 3rem;
@@ -184,14 +186,18 @@ footer {
   z-index: 3;
   margin-right: -2rem;
   width: 23%;
+  grid-template-columns: 1fr 1fr;
+
  
     grid-area: 2 / 5 / 6 / 7;
 
-  display: block;
+
 
   ul {
+    display: grid;
     flex-wrap: wrap;
     justify-content: center;
+    grid-template-columns: 1fr 1fr;
 
     li {
       display: flex;
@@ -208,11 +214,9 @@ footer {
   }
 }
 
-footer {
-  margin-bottom: 10rem;
-}
+ 
 
-#design-archives {
+.design-archives {
 
   font-size: medium;
   
@@ -253,7 +257,7 @@ footer {
   }
 }
 
-#zen-resources {
+.zen-resources {
   font-size: medium;
   
   grid-area: 4 / 1 / 6 / 3;

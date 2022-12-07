@@ -8,7 +8,7 @@ body {
   cursor: crosshair, auto;
 }
 
-#zen-intro {
+.intro {
   display: none;
 }
 
@@ -50,11 +50,6 @@ body:before {
   z-index: 1;
 }
 
-/*need to fix the boday*/
-.designer-name {
-  display: none !important;
-}
-
 @keyframes animatedBackground {
   from {
     background-position: 0 0;
@@ -63,7 +58,7 @@ body:before {
     background-position: 100% 0;
   }
 }
-#zen-explanation {
+.explanation {
   background-image: url("fish 4.svg");
   background-position: 0px 0px;
   background-repeat: no-repeat;
@@ -72,7 +67,7 @@ body:before {
   animation-direction: reverse;
 }
 
-#zen-participation {
+.participation {
   background-image: url("fish 1.svg");
   background-position: 0px 0px;
   background-repeat: no-repeat;
@@ -80,7 +75,7 @@ body:before {
   animation: animatedBackground 10s linear infinite;
 }
 
-#zen-benefits {
+.benefits {
   background-image: url("fish 2.svg");
   background-position: 0px 0px;
   background-repeat: no-repeat;
@@ -88,7 +83,7 @@ body:before {
   animation: animatedBackground 10s ease-in infinite;
 }
 
-#zen-requirements {
+.requirements {
   background-image: url("fish 3.svg");
   background-position: 0px 0px;
   background-repeat: no-repeat;
@@ -97,7 +92,7 @@ body:before {
   animation-direction: reverse;
   color: rgb(229, 216, 254);
 }
-#zen-requirements a:link {
+.requirements a:link {
   color: rgb(245, 170, 252);
   text-decoration: none;
 }
@@ -125,7 +120,8 @@ footer a:link {
   text-decoration: none;
 }
 
-#design-selection {
+.design-selection {
+  display: grid;
   font-size: small;
   position: fixed;
   top: 3rem;
@@ -134,14 +130,16 @@ footer a:link {
   z-index: 3;
   margin-right: -2rem;
   width: 23%;
+  grid-template-columns: 1fr 1fr;
   grid-area: 2/5/6/7;
-  display: block;
 }
-#design-selection ul {
+.design-selection ul {
+  display: grid;
   flex-wrap: wrap;
   justify-content: center;
+  grid-template-columns: 1fr 1fr;
 }
-#design-selection ul li {
+.design-selection ul li {
   display: flex;
   list-style: none;
   font-size: 0.6em;
@@ -154,11 +152,7 @@ footer a:link {
   text-align: center;
 }
 
-footer {
-  margin-bottom: 10rem;
-}
-
-#design-archives {
+.design-archives {
   font-size: medium;
   grid-area: 2/1/4/3;
   position: fixed;
@@ -169,21 +163,21 @@ footer {
   margin-left: -40rem;
   width: 23%;
 }
-#design-archives ul,
-#design-archives li {
+.design-archives ul,
+.design-archives li {
   list-style: none;
   font-size: 0.8em;
   overflow: hidden;
   margin: 1em;
   padding: 2.3em;
 }
-#design-archives ul {
+.design-archives ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   overflow: hidden;
 }
-#design-archives ul li a {
+.design-archives ul li a {
   word-break: break-word;
   text-decoration: none;
   color: #000;
@@ -195,7 +189,7 @@ footer {
   margin: 3rem;
 }
 
-#zen-resources {
+.zen-resources {
   font-size: medium;
   grid-area: 4/1/6/3;
   position: fixed;
@@ -205,20 +199,20 @@ footer {
   margin-left: -40rem;
   width: 23%;
 }
-#zen-resources ul,
-#zen-resources li {
+.zen-resources ul,
+.zen-resources li {
   list-style: none;
   font-size: 0.8em;
   overflow: hidden;
   padding: 1em;
 }
-#zen-resources ul {
+.zen-resources ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   overflow: hidden;
 }
-#zen-resources ul li a {
+.zen-resources ul li a {
   word-break: break-word;
   text-decoration: none;
   color: #000;
