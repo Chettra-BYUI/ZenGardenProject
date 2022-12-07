@@ -1,4 +1,11 @@
- 
+$coral_01: #e40d17;
+$coral_02: #0aaa2d;
+$coral_03: #003cff;
+$coral_04: #f71b94;
+$coral_05: #cc8a10;
+$coral_06: #2bff00;
+$coral_07: #4d068f;
+
  
 body {
   background: rgb(128, 234, 255);
@@ -135,8 +142,29 @@ body:before {
      
     }
 }
-#zen-supporting :nth-child(1) {
-  color: salmon;
+.participation :nth-child(2) {
+
+   a:link {
+    color: $coral_01;
+    text-decoration: none;
+  }
+}
+
+.participation :nth-child(4) {
+
+  a:nth-child(1) {
+   color:$coral_01;
+   text-decoration: none;
+ }
+ a:nth-child(2) {
+  color: $coral_03;
+  text-decoration: none;
+}
+a:nth-child(4) {
+  color: $coral_04;
+  text-decoration: none;
+}
+
 
 }
 
