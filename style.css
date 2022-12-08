@@ -9,6 +9,10 @@ body {
 }
 
 .intro {
+  background-image: url("sub.svg");
+  background-repeat: no-repeat;
+}
+.intro h1, .intro h2 {
   display: none;
 }
 
@@ -103,7 +107,7 @@ body:before {
 }
 
 .participation :nth-child(4) a:nth-child(1) {
-  color: #e40d17;
+  color: #0aaa2d;
   text-decoration: none;
 }
 .participation :nth-child(4) a:nth-child(2) {
@@ -115,8 +119,38 @@ body:before {
   text-decoration: none;
 }
 
+.requirements :nth-child(5) a:nth-child(1) {
+  color: #cc8a10;
+  text-decoration: none;
+}
+.requirements :nth-child(5) a:nth-child(2) {
+  color: #2bff00;
+  text-decoration: none;
+}
+.requirements :nth-child(5) a:nth-child(3) {
+  color: #a997ba;
+  text-decoration: none;
+}
+.requirements :nth-child(5) a:nth-child(4) {
+  color: coral_01;
+  text-decoration: none;
+}
+
+.requirements :nth-child(6) a:nth-child(1) {
+  color: #0aaa2d;
+  text-decoration: none;
+}
+.requirements :nth-child(6) a:nth-child(2) {
+  color: #003cff;
+  text-decoration: none;
+}
+.requirements :nth-child(6) a:nth-child(3) {
+  color: #f71b94;
+  text-decoration: none;
+}
+
 footer a:link {
-  color: rgb(245, 170, 252);
+  color: rgb(94, 195, 17);
   text-decoration: none;
 }
 

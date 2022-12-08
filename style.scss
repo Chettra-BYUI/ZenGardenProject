@@ -7,7 +7,7 @@ $coral_03: #003cff;
 $coral_04: #f71b94;
 $coral_05: #cc8a10;
 $coral_06: #2bff00;
-$coral_07: #4d068f;
+$coral_07: #a997ba;
 
  
 body {
@@ -28,7 +28,11 @@ body {
 }
 
  .intro {
-  display: none;
+  background-image: url('sub.svg');
+  background-repeat: no-repeat;
+  h1, h2{
+    display: none;
+  }
 }
  
 .page-wrapper {
@@ -111,6 +115,7 @@ body:before {
   animation: animatedBackground 10s ease infinite;
   animation-direction: reverse;
 }
+ 
 
 .explanation {
   
@@ -154,7 +159,7 @@ body:before {
 .participation :nth-child(4) {
 
   a:nth-child(1) {
-   color:$coral_01;
+   color:$coral_02;
    text-decoration: none;
  }
  a:nth-child(2) {
@@ -169,9 +174,48 @@ a:nth-child(4) {
 
 }
 
+.requirements :nth-child(5) {
+
+  a:nth-child(1) {
+   color:$coral_05;
+   text-decoration: none;
+ }
+ a:nth-child(2) {
+  color: $coral_06;
+  text-decoration: none;
+}
+a:nth-child(3) {
+  color: $coral_07;
+  text-decoration: none;
+}
+
+a:nth-child(4) {
+  color: coral_01;
+  text-decoration: none;
+}
+}
+
+.requirements :nth-child(6) {
+
+  a:nth-child(1) {
+   color:$coral_02;
+   text-decoration: none;
+ }
+ a:nth-child(2) {
+  color: $coral_03;
+  text-decoration: none;
+}
+a:nth-child(3) {
+  color: $coral_04;
+  text-decoration: none;
+}
+
+ 
+}
+
 footer {
   a:link {
-    color: rgb(245, 170, 252);
+    color: rgb(94, 195, 17);
     text-decoration: none;
   }
 }
