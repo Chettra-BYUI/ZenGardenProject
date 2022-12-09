@@ -135,7 +135,7 @@ body:before {
   h1, h2{
     background-image: url('sub.svg');
     background-repeat: no-repeat;
-    color: rgb(230, 230, 230, .0001);
+    color: rgb(230, 230, 230);
  
     @include ease-in;
  
