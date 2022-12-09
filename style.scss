@@ -1,4 +1,10 @@
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Electrolize&family=Kanit:wght@100;300&display=swap');
+
+
+
 // varables sections
 
 $coral_01: #e40d17;
@@ -12,6 +18,7 @@ $coral_08: #a997ba;
 
  
 body {
+  font-family: 'Kanit', sans-serif;
   background: rgb(128, 234, 255);
   background: linear-gradient(
     180deg,
@@ -28,6 +35,11 @@ body {
      
 }
 
+h3 {
+  font-family: 'East Sea Dokdo', cursive;
+  font-size: 5rem;
+
+}
 
  
 .page-wrapper {
@@ -244,9 +256,21 @@ footer {
     color: rgb(94, 195, 17);
     text-decoration: none;
   }
+
+
 }
 
+
+
 .design-selection {
+
+  .select {
+    font-family: 'Electrolize', sans-serif;
+    font-size: 1rem;
+  }
+
+   
+
   display: grid;
   font-size: small;
   position: fixed;
@@ -264,15 +288,19 @@ footer {
 
 
   ul {
+  
     display: grid;
     flex-wrap: wrap;
     justify-content: center;
     grid-template-columns: 1fr 1fr;
 
     li {
+
+      font-family: cursive;
+  
       display: flex;
       list-style: none;
-      font-size: 0.6em;
+      font-size: .6rem;
       margin: 1rem;
       color: #000;
       background: #ffc;
@@ -282,15 +310,24 @@ footer {
       text-align: center;
     }
   }
+
+
 }
 
  
 
 .design-archives {
+  margin-top: -5rem;
+  margin-bottom: 2rem;
+  .archives {
+    font-family: 'Electrolize', sans-serif;
+    font-size: 2rem;
+
+  }
 
   font-size: medium;
   
-  grid-area: 2 / 1 / 4 / 3;
+  grid-area: 1 / 1 / 4 / 3;
   
   position: fixed;
   bottom: 17rem;
@@ -299,13 +336,40 @@ footer {
   z-index: 3;
   margin-left: -40rem;
   width: 23%;
-  ul,
+  
   li {
     list-style: none;
     font-size: 0.8em;
     overflow: hidden;
     margin: 1em;
     padding: 2.3em;
+
+
+    margin: 1rem;
+    
+    list-style: none;
+    font-size: 0.8em;
+    overflow: hidden;
+    padding: 1em;
+
+    //button
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    background-color:#c62d1f;
+    border-radius:18px;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:7px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+
+    a {
+      text-decoration: none;
+    }
   }
 
   ul {
@@ -317,9 +381,8 @@ footer {
   ul li a {
     word-break: break-word;
     text-decoration: none;
-    color: #000;
-    background: red;
-    border-radius: 90%;
+  
+    
     height: 20em;
     width: 20em;
     padding: 1em;
@@ -328,9 +391,17 @@ footer {
 }
 
 .zen-resources {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+
+  .resources {
+   
+    font-family: 'Electrolize', sans-serif;
+    font-size: 2rem;
+  }
   font-size: medium;
   
-  grid-area: 4 / 1 / 6 / 3;
+  grid-area: 5 / 1 / 6 / 3;
   
   position: fixed;
   bottom: 5rem;
@@ -339,13 +410,43 @@ footer {
   z-index: 3;
   margin-left: -40rem;
   width: 23%;
-  ul,
+
   li {
+    margin: 1rem;
+    
     list-style: none;
     font-size: 0.8em;
     overflow: hidden;
     padding: 1em;
+
+    //button
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    background-color:#c62d1f;
+    border-radius:18px;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:7px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+
+    a {
+      text-decoration: none;
+    }
+    
   }
+
+  li:hover {
+    background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+
+  }
+
+
 
   ul {
     display: flex;
@@ -354,17 +455,7 @@ footer {
     overflow: hidden;
   }
 
-  ul li a {
-    word-break: break-word;
-    text-decoration: none;
-    color: #000;
-    background: red;
-    border-radius: 70%;
-    height: 20em;
-    width: 15em;
-    padding: 0.5em;
-    margin: 3rem;
-  }
+
 }
 
 ol {
