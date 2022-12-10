@@ -1,4 +1,4 @@
-
+//google fonts that go along with under the sea theme yet are still readable
 
 
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Electrolize&family=Kanit:wght@100;300&display=swap');
@@ -14,7 +14,7 @@ $coral_04: #f71b94;
 $coral_05: #cc8a10;
 $coral_06: #2bff00;
 $coral_07: #a997ba;
-$coral_08: #a997ba;
+
 
  
 body {
@@ -49,30 +49,17 @@ h3 {
   text-align: center;
   padding-top: -5rem;
  
- 
-  /*padding-left: 35%;
-  padding-right: 30%;*/
+  
 
   grid-area: 1 / 3 / 7 / 5;
 
-  /* background-image: url("foreground.svg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;  */
+ 
 }
 
-/* #zen-intro, #zen-participation, #zen-supporting {
-    background-color: lightblue;
-    text-align: center;
-    padding-top: 20%;
-    padding-left: 35%;
-    padding-right: 35%;
-
-    /* background-image: url("foreground.svg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;  */
+ 
 
 
-
+//this is where we added the SVG foreground layer and the content of the text can be scrolled underneath it
 body:before {
 
   grid-area: 1 / 1 / 7 / 7;
@@ -120,6 +107,8 @@ body:before {
   animation-direction: reverse;
 }
 @mixin ease-in {  animation: animatedBackground 10s ease-in infinite;}
+
+@mixin ease-in2 {  animation: animatedBackground 5s ease-in infinite;}
 @mixin ease {
   animation: animatedBackground 10s ease infinite;
   animation-direction: reverse;
@@ -132,26 +121,31 @@ body:before {
  
 
  
-  h1, h2{
+  h1 {
     background-image: url('sub.svg');
     background-repeat: no-repeat;
-    color: rgb(230, 230, 230);
+    color: rgb(230, 230, 230, .0001);
  
     @include ease-in;
  
     
 }
 
+h2{
+  background-image: url('sub.svg');
+  background-repeat: no-repeat;
+  color: rgb(230, 230, 230, .0001);
+
+  @include ease-in2;
+
+  
+}
+
 
 }
 
 
-// .preamble:nth-child(2) {
-//   background-image: url('fish 5.svg');
-//   @include fish;
-//   @include ease-out;
-   
-//   }
+ 
 
 
 
@@ -309,6 +303,7 @@ footer {
       width: 12em;
       text-align: center;
     }
+    
   }
 
 
@@ -318,10 +313,11 @@ footer {
 
 .design-archives {
   margin-top: -5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 10rem;
   .archives {
     font-family: 'Electrolize', sans-serif;
     font-size: 2rem;
+
 
   }
 
@@ -351,6 +347,8 @@ footer {
     font-size: 0.8em;
     overflow: hidden;
     padding: 1em;
+    color: grey;
+    text-decoration: none;
 
     //button
     box-shadow: 3px 4px 0px 0px #8a2a21;
@@ -365,11 +363,13 @@ footer {
     font-size:17px;
     padding:7px 25px;
     text-decoration:none;
-    text-shadow:0px 1px 0px #248105;
+    text-shadow:0px 1px 0px #810e05;
 
     a {
       text-decoration: none;
+      color: #000;
     }
+    
   }
 
   ul {
@@ -377,9 +377,6 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     overflow: hidden;
-      li:hover {
-        background: linear-gradient(to bottom, #85ec70 5%, #54c61f 100%);
-        background-color: #6ff708;}
   }
   ul li a {
     word-break: break-word;
@@ -392,12 +389,18 @@ footer {
     margin: 3rem;
   }
   
+  li:hover {
+    background:linear-gradient(to bottom, #6ff708 5%, #54c61f 100%);
+	background-color:#85ec70;
+
+
+  }
 }
 
 .zen-resources {
   margin-top: 1rem;
   margin-bottom: 2rem;
-  
+
   .resources {
    
     font-family: 'Electrolize', sans-serif;
@@ -422,7 +425,7 @@ footer {
     font-size: 0.8em;
     overflow: hidden;
     padding: 1em;
-    
+
     //button
     box-shadow: 3px 4px 0px 0px #8a2a21;
     background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
@@ -440,13 +443,15 @@ footer {
 
     a {
       text-decoration: none;
+      color: #000;
     }
     
   }
 
   li:hover {
-    background:linear-gradient(to bottom, #85ec70 5%, #54c61f 100%);
-	background-color:#6ff708;
+    background:linear-gradient(to bottom, #6ff708 5%, #54c61f 100%);
+	background-color:#85ec70;
+
 
   }
 
