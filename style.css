@@ -131,7 +131,7 @@ body:before {
   text-decoration: none;
 }
 .requirements :nth-child(5) a:nth-child(4) {
-  color: $coral_01;
+  color: #e40d17;
   text-decoration: none;
 }
 
@@ -245,7 +245,7 @@ footer a:link {
   overflow: hidden;
 }
 .design-archives ul li a {
-  word-break: break-word;
+  
   text-decoration: none;
   height: 20em;
   width: 20em;
