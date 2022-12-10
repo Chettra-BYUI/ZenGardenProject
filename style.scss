@@ -365,7 +365,7 @@ footer {
     font-size:17px;
     padding:7px 25px;
     text-decoration:none;
-    text-shadow:0px 1px 0px #810e05;
+    text-shadow:0px 1px 0px #248105;
 
     a {
       text-decoration: none;
@@ -377,6 +377,9 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     overflow: hidden;
+      li:hover {
+        background: linear-gradient(to bottom, #85ec70 5%, #54c61f 100%);
+        background-color: #6ff708;}
   }
   ul li a {
     word-break: break-word;
@@ -388,12 +391,13 @@ footer {
     padding: 1em;
     margin: 3rem;
   }
+  
 }
 
 .zen-resources {
   margin-top: 1rem;
   margin-bottom: 2rem;
-
+  
   .resources {
    
     font-family: 'Electrolize', sans-serif;
@@ -418,7 +422,7 @@ footer {
     font-size: 0.8em;
     overflow: hidden;
     padding: 1em;
-
+    
     //button
     box-shadow: 3px 4px 0px 0px #8a2a21;
     background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
@@ -441,8 +445,8 @@ footer {
   }
 
   li:hover {
-    background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
-	background-color:#f24437;
+    background:linear-gradient(to bottom, #85ec70 5%, #54c61f 100%);
+	background-color:#6ff708;
 
   }
 
